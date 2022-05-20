@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./assets/vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/vendors/youtube-video-popup/youtube-overlay.css" />
+    <link rel="stylesheet" href="./assets/vendors/jquery-nice-select-master/css/nice-select.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./assets/vendors/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./assets/vendors/price-range-slider/price-range-slider.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Meghna Commercial | Home</title>
+  </head>
+  <body class="home">
+    <!-- Site Header -->
+    <header class="site-header">
+      <!-- Header Top -->
+      <div class="site-header__top py-3 py-lg-3 bg--primary">
+        <div class="container-fluid px-xl-4">
+          <div class="row">
+            <ul class="site-ecommerce-links d-flex justify-content-center justify-content-sm-end">
+              <li>
+                <a href="#" class="mx-2 d-inline-block px-1 text--sm">Order Tracking</a>
+              </li>
+              <li>
+                <a href="#" class="mx-2 d-inline-block px-1 text--sm">Top Offers</a>
+              </li>
+              <li>
+                <a href="#" class="mx-2 d-inline-block px-1 text--sm">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Header Middle -->
+      <div class="site-header__middle bg--light pt-3 pt-lg-0 pb-3">
+        <div class="container-fluid px-xl-4">
+          <div class="row align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="d-flex align-items-center w-auto">
+              <a class="site-header__button--nav-toggler me-2 me-lg-3 d-xl-none" data-bs-toggle="offcanvas" href="#offcanvasNavigation" role="button" aria-controls="offcanvasNavigation">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+              <a href="./index.html" class="d-inline-block site-header__logo">
+                <img src="./assets/images/logo.png" alt="logo" />
+              </a>
+            </div>
+            <!-- Product Search Form -->
+            <form action="#" class="product-search-form d-none d-xl-inline-block w-auto">
+              <div class="product-search-form__inputs-wrapper border-custom-1 border-radius d-flex align-items-center bg--white">
+                <select class="product-search-form__select-category border-0" name="p_s_sel_cat">
+                  <option value="all_categories">All Categories</option>
+                  <option value="chocolate_moulds">Chocolate Moulds</option>
+                  <option value="chocolate_machines">Chocolate Machines</option>
+                  <option value="packageing_boxes">Packaging Boxes</option>
+                  <option value="bakery_ingredients">Bakery Ingredients</option>
+                </select>
+                <input type="text" name="p_s_input_text" placeholder="Search for products" required />
+                <button type="submit" class="button button-secondary rounded-0">Search</button>
+              </div>
+            </form>
+            <!-- Site CTA Links -->
+            <div class="site-header__cta-wrapper d-flex align-items-center justify-content-end w-auto">
+              <a href="javascript:void(0)" class="d-inline-block d-lg-none site-header__cta site-header__cta--search me-2"><i class="bi bi-search"></i></a>
+              <div class="site-header__my-account dropdown ms-1">
+                <a class="dropdown-toggle bg-transparent text--secondary border-0 d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="me-2"><i class="fa-regular fa-user"></i></span>
+                  <span class="my-account__text d-none d-md-inline-block"><small class="d-block">Sign In</small><span class="fw-bold">Your Account</span></span>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Register</a></li>
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                </ul>
+              </div>
+              <a href="#" class="site-header__cta site-header__cta--wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span class="item-count wishlist__item-count">2</span>
+              </a>
+              <a href="#" class="site-header__cta site-header__cta--cart">
+                <span><i class="bi bi-cart"></i></span>
+                <span class="item-count cart__item-count">2</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Bottom -->
+      <div class="site-header__bottom d-none d-xl-block bg--white position-relative">
+        <div class="container-fluid ps-0 pe-4">
+          <div class="row justify-content-between align-items-center">
+            <div class="d-flex w-auto align-items-center">
+              <!-- Categories -->
+              <button class="button button-primary rounded-0 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategories" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-bars"></i>
+                <span class="text-uppercase ms-2">Shop By Categories</span>
+              </button>
+              <div class="collapse categories-collapse" id="collapseCategories">
+                <ul class="categories-mega-menu">
+                  <li class="categories-mega-menu__item">
+                    <a href="#" class="categories-mega-menu__item--link"
+                      ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                    <div class="categories-mega-menu__content-area">
+                      <div class="row">
+                        <div class="col-lg-8 p-5 d-flex flex-wrap">
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="categories-mega-menu__item">
+                    <a href="#" class="categories-mega-menu__item--link"
+                      ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                    <div class="categories-mega-menu__content-area">
+                      <div class="row">
+                        <div class="col-lg-8 p-5 d-flex flex-wrap">
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="categories-mega-menu__item">
+                    <a href="#" class="categories-mega-menu__item--link"
+                      ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                    <div class="categories-mega-menu__content-area">
+                      <div class="row">
+                        <div class="col-lg-8 p-5 d-flex flex-wrap">
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Main Navigation Menu -->
+              <nav class="site-header__nav d-none d-lg-inline-block w-auto">
+                <ul class="d-flex justify-content-center align-items-center">
+                  <li>
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="./about-us.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="./products.html">Products</a>
+                  </li>
+                  <li>
+                    <a href="./new-items.html">New Items</a>
+                  </li>
+                  <li>
+                    <a href="./contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Offer Dropdown -->
+            <div class="dropdown w-auto site-header__offer-container">
+              <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="me-2"><img src="./assets/images/discount.png" alt="discount icon" width="36" /></span>
+                <span class="site-header__offer-text"><small>Only this weekend</small><br /><span class="fw-bold">Super Discount</span></span>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Offer 1</a></li>
+                <li><a class="dropdown-item" href="#">Offer 2</a></li>
+                <li><a class="dropdown-item" href="#">Offer 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavigation" aria-labelledby="offcanvasNavigationLabel">
+        <div class="offcanvas-header justify-content-end">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav class="site-header__mobile-nav">
+            <ul>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="./products.html">Products</a>
+              </li>
+              <li>
+                <a href="./new-items.html">New Items</a>
+              </li>
+              <li>
+                <a href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="site-content">
+      <!-- Hero section -->
+      <section class="hero-section text-center text-md-start">
+        <div class="hero-slider">
+          <div class="hero-slider__slide" style="background-image: url(./assets/images/banner.png)">
+            <div class="container-fluid px-4">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6 ps-xl-4">
+                  <h1 class="text-uppercase">Easter <span class="text--secondary">2022</span><br /><span class="text--secondary">New</span> Arrivals</h1>
+                  <p class="text--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur magni suscipit est expedita sunt!</p>
+                  <a href="./products.html" class="d-inline-block button button-primary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slider__slide" style="background-image: url(./assets/images/banner.png)">
+            <div class="container-fluid px-4">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6 ps-xl-4">
+                  <h1 class="text-uppercase">Easter <span class="text--secondary">2022</span><br /><span class="text--secondary">New</span> Arrivals</h1>
+                  <p class="text--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur magni suscipit est expedita sunt!</p>
+                  <a href="./products.html" class="d-inline-block button button-primary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- speial section -->
+      <section class="section--py products-slider-section speical-section">
+        <div class="container">
+          <div class="d-flex justify-content-center justify-content-md-between mb-4">
+            <h2 class="text--heading section__heading d-block d-md-inline-block ps-5 ps-md-0 pe-5"><span class="bg--white px-2">Holi Special</span></h2>
+            <a href="#" class="button button-primary--outlined d-none d-md-inline-block">View All</a>
+          </div>
+          <div class="products-slider mt-3">
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-2.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="./product-single.html" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="#">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-3.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-5.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-6.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center d-md-none mt-4">
+            <a href="#" class="button button-primary--outlined d-inline-block d-md-none">View All</a>
+          </div>
+        </div>
+      </section>
+      <!-- Top Selling section -->
+      <section class="section--pb products-slider-section top-selling-section">
+        <div class="container">
+          <div class="d-flex justify-content-center justify-content-md-between mb-4">
+            <h2 class="text--heading section__heading d-block d-md-inline-block ps-5 ps-md-0 pe-5"><span class="bg--white px-2">Top Selling Products</span></h2>
+            <a href="#" class="button button-primary--outlined d-none d-md-inline-block">View All</a>
+          </div>
+          <div class="products-slider mt-3">
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-2.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-3.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-5.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-6.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center d-md-none mt-4">
+            <a href="#" class="button button-primary--outlined d-inline-block d-md-none">View All</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="section--py categories-section">
+        <div class="container position-relative">
+          <div class="d-flex justify-content-center justify-content-md-between mb-4">
+            <h2 class="text--heading section__heading d-block d-md-inline-block ps-5 ps-md-0 pe-5"><span class="text--light bg--primary px-2">Top Categories</span></h2>
+            <a href="#" class="button button-white--outlined d-none d-md-inline-block">View All</a>
+          </div>
+          <div class="categories-slick-slider mt-3">
+            <div class="category-block-container">
+              <div class="category-block">
+                <a href="#" class="category-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="category-block__thumbnail" />
+                  <p class="category-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="category-block-container">
+              <div class="category-block">
+                <a href="#" class="category-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="category-block__thumbnail" />
+                  <p class="category-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="category-block-container">
+              <div class="category-block">
+                <a href="#" class="category-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="category-block__thumbnail" />
+                  <p class="category-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="category-block-container">
+              <div class="category-block">
+                <a href="#" class="category-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="category-block__thumbnail" />
+                  <p class="category-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="category-block-container">
+              <div class="category-block">
+                <a href="#" class="category-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="category-block__thumbnail" />
+                  <p class="category-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="category-block-container">
+              <div class="category-block">
+                <a href="#" class="category-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="category-block__thumbnail" />
+                  <p class="category-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center d-md-none mt-4">
+            <a href="#" class="button button-primary--outlined d-inline-block d-md-none">View All</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Collection section -->
+      <section class="section--pb products-slider-section new-collection-section">
+        <div class="container">
+          <div class="d-flex justify-content-center justify-content-md-between mb-4">
+            <h2 class="text--heading section__heading d-block d-md-inline-block ps-5 ps-md-0 pe-5"><span class="bg--white px-2">New Arrival</span></h2>
+            <a href="#" class="button button-primary--outlined d-none d-md-inline-block">View All</a>
+          </div>
+          <div class="products-slider mt-3">
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-2.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-3.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-5.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-6.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center d-md-none mt-4">
+            <a href="#" class="button button-primary--outlined d-inline-block d-md-none">View All</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Trending Products section -->
+      <section class="section--pb products-slider-section trending-section">
+        <div class="container">
+          <div class="d-flex justify-content-center justify-content-md-between mb-4">
+            <h2 class="text--heading section__heading d-block d-md-inline-block ps-5 ps-md-0 pe-5"><span class="bg--white px-2">Trending Products</span></h2>
+            <a href="#" class="button button-primary--outlined d-none d-inline-block">View All</a>
+          </div>
+          <div class="products-slider mt-3">
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-2.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-1.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-3.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-5.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item-container">
+              <div class="product-item">
+                <div class="product-item__header">
+                  <a href="./product-single.html" class="d-block w-100 position-relative">
+                    <img src="./assets/images/products/p-6.jpg" alt="Product Title" />
+                  </a>
+                  <span class="product-item__discount-badge">20% Off</span>
+                  <a href="#" class="product-item__button--add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                </div>
+                <div class="product-item__body">
+                  <p class="text--heading product-item__title fw-bold mb-2"><a href="./product-single.html">Product Title 1</a></p>
+                  <p class="product-item__price fw--semibold mb-2"><span class="sale-price">$10.00</span><span class="regular-price text-decoration-line-through text-secondary text--xs ms-1">$12.00</span></p>
+                  <div class="product-item__review-container d-flex justify-content-center">
+                    <div class="review-stars-wrapper mb-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="review-avg-count ms-1 text--sm">(3.5)</div>
+                  </div>
+                  <a href="#" class="d-inline-block button button-secondary product-item__button--add-to-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center d-md-none mt-4">
+            <a href="#" class="button button-primary--outlined d-inline-block d-md-none">View All</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Festive Range Section -->
+      <section class="festive-range-section section--py">
+        <div class="container">
+          <div class="d-flex justify-content-center mb-5">
+            <h2 class="text--heading section__heading d-md-inline-block px-5"><span class="bg--white px-2">Festive Range</span></h2>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+              <div class="festive-block">
+                <a href="#" class="festive-block--link">
+                  <img src="https://dummyimage.com/400x400/2b2b2b/fff" alt="Block Title" class="festive-block__thumbnail" />
+                  <p class="text--light festive-block__title">Baby Showers</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer bg--primary-dark">
+      <div class="site-footer__top section--py">
+        <div class="container">
+          <div class="row pt-4 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center text-md-start mb-4 mb-lg-0 pe-lg-4 site-footer__col">
+              <h6 class="text--light mb-2 mb-md-3">About The Store</h6>
+              <p class="text--light-muted text--sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nostrum, doloribus perferendis quos autem cupiditate.</p>
+              <div class="site-footer-contact-wrapper mb-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                <img src="./assets/images/customer-support.png" alt="Support" width="48" />
+                <div class="ps-3">
+                  <p class="text--light-muted text--xs mb-0">Send us an email</p>
+                  <a href="tel:+1234567890" class="d-inline-block site-footer-contact--link fw-bold text--lg text--light">+1234567890</a>
+                </div>
+              </div>
+              <p class="text--sm site-footer__office-address">51 Lorem Street, Lorem Hat, Kolkata 200200</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center text-md-start mb-4 mb-lg-0 mt-2 mt-md-0 site-footer__col">
+              <h6 class="text--light mb-2 mb-md-3">My Account</h6>
+              <ul class="site-footer-menu">
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Product Support</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Checkout</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Shopping Cart</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Wishlist</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Custom Link</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Redeem Voucher</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center text-md-start mb-4 mb-md-0 mt-2 mt-xl-0 site-footer__col">
+              <h6 class="text--light mb-2 mb-md-3">Customer Service</h6>
+              <ul class="site-footer-menu">
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Help Center</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Contact Us</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">Report Abuse</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">Submit A Dispute</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">Policies & Rules</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">Return Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-3 text-center text-md-start text-lg-center text-xl-start site-footer__col mt-2 mt-lg-4 mt-xl-0">
+              <h6 class="text--light mb-2 mb-md-3">Newsletter</h6>
+              <p class="text--sm text--light-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, molestias?</p>
+              <form action="#" class="form subscribe-form d-flex justify-content-center justify-content-xl-between">
+                <div class="form__inner-wrapper bg--white border-radius--custom d-flex align-items-center p-1 border-custom-1">
+                  <div>
+                    <input type="email" name="sub_email" placeholder="Enter your email..." class="border-0 py-2 px-2" required />
+                  </div>
+                  <button type="submit" class="button button-secondary py-2 px-3">
+                    <span class="d-md-none"><i class="fa-solid fa-paper-plane"></i></span><span class="d-none d-md-block">Subscribe</span>
+                  </button>
+                </div>
+              </form>
+              <p class="text--sm subscribe-form__info-text mt-3">By providing your email address, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom pt-3 py-4 p-md-3 section--pb">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8 text-center">
+              <nav class="site-footer__quick-links-nav mb-4">
+                <ul class="quick-links d-flex justify-content-center flex-wrap">
+                  <li>
+                    <a href="#">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 4</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 5</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 6</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 7</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Link 8</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 9</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 10</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 11</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Link 12</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 13</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 14</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 15</a>
+                  </li>
+                  <li>
+                    <a href="#">Link 16</a>
+                  </li>
+                </ul>
+              </nav>
+              <div><img src="./assets/images/PAY.png" alt="Payment Method" class="d-block mx-auto" /></div>
+              <p class="text--light-muted mb-0 mt-3 text--sm">© Copyright 2022 Meghna Commercial. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Toast Notification -->
+      <div class="position-fixed p-3 toast-container" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header justify-content-end px-2 pt-2 pb-0">
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body p-3">
+            <span class="toast-body__icon me-2"></span>
+            <span class="toast-body__text text--heading"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Search Form -->
+      <div class="search-form-container-sm bg--light">
+        <a href="#" class="search-form-container-sm__button--close"><i class="bi bi-x-lg"></i></a>
+        <div class="search-form d-flex justify-content-between align-items-center">
+          <input type="text" name="search_form_sm_input" id="searchFormSmInput" placeholder="Search your products here..." />
+          <button class="search-form__button--submit"><i class="bi bi-search"></i></button>
+        </div>
+        <span class="text--error text--sm mt-2 d-none search-form__input-error-text">*This field is required.</span>
+      </div>
+
+      <a href="javascript:void(0)" class="scroll-to-top-button"><i class="fa-solid fa-chevron-up"></i></a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/vendors/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2d537fef4a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="./assets/vendors/youtube-video-popup/youtube-overlay.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <script src="./assets/vendors/jquery-nice-select-master/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./assets/vendors/price-range-slider/price-range-slider.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

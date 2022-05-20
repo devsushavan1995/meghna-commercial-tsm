@@ -65,7 +65,7 @@ $(document).ready(function () {
       hasSubmitted = true;
     }
   });
- 
+
   //Click event to scroll to top
   $(".scroll-to-top-button").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 500);
@@ -231,6 +231,14 @@ $(document).ready(function () {
     nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
     responsive: [
       {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+
+      {
         breakpoint: 1200,
         settings: {
           slidesToShow: 4,
@@ -255,13 +263,7 @@ $(document).ready(function () {
           slidesToScroll: 1,
         },
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
+
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -413,29 +415,18 @@ $(document).ready(function () {
   $(".product-single-info-tab .nav-link-slider").css({ left: +actPosition.left, width: actWidth });
 
   // Product single page accordion
-  $(".set > a").on("click", function() {
+  $(".set > a").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      $(this)
-        .siblings(".content")
-        .slideUp(200);
-      $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
+      $(this).siblings(".content").slideUp(200);
+      $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
     } else {
-      $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
-      $(this)
-        .find("i")
-        .removeClass("fa-plus")
-        .addClass("fa-minus");
+      $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+      $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
       $(".set > a").removeClass("active");
       $(this).addClass("active");
       $(".content").slideUp(200);
-      $(this)
-        .siblings(".content")
-        .slideDown(200);
+      $(this).siblings(".content").slideDown(200);
     }
   });
 });

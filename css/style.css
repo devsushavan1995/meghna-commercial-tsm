@@ -418,11 +418,7 @@ section {
 .page-title-section .page-title {
   display: none;
 }
-.slick-slider {
-  display: table !important;
-  table-layout: fixed !important;
-  width: 100% !important;
-}
+.slick-slider { display: block !important; }
 .slick-track {
   padding: 0 0 2rem;
 }

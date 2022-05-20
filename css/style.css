@@ -1383,8 +1383,9 @@ input:checked {
   outline: 0;
 }
 .site-footer .search-form-container-sm .search-form button {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

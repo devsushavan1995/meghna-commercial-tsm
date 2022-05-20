@@ -376,11 +376,11 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: swiper,
+      swiper: swiperThumb,
     },
   });
 
-  
+
   // Products Page sub category dropdown menu
   var catItemExpandBtns = $(".category-filter-list .category-filter__item .item__button--expand");
 

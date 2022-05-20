@@ -205,139 +205,182 @@ $(document).ready(function () {
     time: 1000,
   });
 
-  // Slick Slider - Speical Slider
-  $(".hero-slider").slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+  // hero section swiper
+  var swiperHero = new Swiper(".hero-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
     autoplay: true,
-    arrows: true,
-    prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-    nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+    pauseOnMouseEnter: true,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderCustom: function (swiper, current, total) {
+        var names = [];
+        $(".swiper-wrapper .swiper-slide").each(function (i) {
+          names.push($(this).data("name"));
+        });
+        var text = "<ul>";
+        for (let i = 1; i <= total; i++) {
+          if (current == i) {
+            text += `<li class="swiper-pagination-bullet active">${names[i]}</li>`;
+          } else {
+            text += `<li class="swiper-pagination-bullet">${names[i]}</li>`;
+          }
+        }
+        text += "</ul>";
+        return text;
+      },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
-  // Slick Slider - Speical Slider
-  $(".products-slider").slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+  var swiperProducts = new Swiper(".products-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: 5,
+    spaceBetween: 12,
+    loop: true,
     autoplay: true,
-    arrows: true,
-    prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-    nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+    pauseOnMouseEnter: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
       },
+      // when window width is >= 480px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 24,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderCustom: function (swiper, current, total) {
+        var names = [];
+        $(".swiper-wrapper .swiper-slide").each(function (i) {
+          names.push($(this).data("name"));
+        });
+        var text = "<ul>";
+        for (let i = 1; i <= total; i++) {
+          if (current == i) {
+            text += `<li class="swiper-pagination-bullet active">${names[i]}</li>`;
+          } else {
+            text += `<li class="swiper-pagination-bullet">${names[i]}</li>`;
+          }
+        }
+        text += "</ul>";
+        return text;
+      },
+    },
 
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ],
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
-  // Slick Slider - Speical Slider
-  $(".categories-slick-slider").slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+  var swiperCategories = new Swiper(".categories-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: 5,
+    spaceBetween: 12,
+    loop: true,
     autoplay: true,
-    arrows: true,
-    prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-    nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
+    pauseOnMouseEnter: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
       },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
+      // when window width is >= 480px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 24,
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 24,
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 24,
       },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ],
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 24,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderCustom: function (swiper, current, total) {
+        var names = [];
+        $(".swiper-wrapper .swiper-slide").each(function (i) {
+          names.push($(this).data("name"));
+        });
+        var text = "<ul>";
+        for (let i = 1; i <= total; i++) {
+          if (current == i) {
+            text += `<li class="swiper-pagination-bullet active">${names[i]}</li>`;
+          } else {
+            text += `<li class="swiper-pagination-bullet">${names[i]}</li>`;
+          }
+        }
+        text += "</ul>";
+        return text;
+      },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  // Product single page swiper gallery
+  var swiperThumb = new Swiper(".product-single-swiper-thumb", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiperThumbView = new Swiper(".product-single-swiper-view", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
   });
 
-  // Product Single Page Thumb slick slider
-  $(".product-single-slick-view").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: ".product-single-slick-thumb",
-  });
-  $(".product-single-slick-thumb").slick({
-    vertical: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: ".product-single-slick-view",
-    arrows: false,
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true,
-  });
+  
   // Products Page sub category dropdown menu
   var catItemExpandBtns = $(".category-filter-list .category-filter__item .item__button--expand");
 

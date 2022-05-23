@@ -1,4 +1,25 @@
 $(document).ready(function () {
+  // Faqs section search
+  var faqsSearchFormInput = $("#faqsSearchFormInput");
+  var faqsQuestions = $(".faqs-section .set");
+  faqsSearchFormInput.on("keypress", function () {
+    var inpVal = $(this).val();
+    inpVal = inpVal.toLowerCase();
+    console.log(inpVal);
+    faqsQuestions.each(function () {
+      // console.log($(this).find('span').html())
+      if ($(this).find("span").text().toLowerCase().indexOf(inpVal) > 1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+    if (inpVal.length == 0) {
+      faqsQuestions.each(function () {
+        $(this).show();
+      });
+    }
+  });
   // $("html").click(function (event) {
   //   if ($(event.target).closest(".categories-collapse ").length !== 0) {
   //     var categoriesCollapse = $("#collapseCategories");
@@ -218,6 +239,15 @@ $(document).ready(function () {
     time: 1000,
   });
 
+  // Add address on cart page
+  $(".address-container__button--add-adress").on("click", function () {
+    console.log("clicked");
+    $("body").addClass("bg-overlay");
+  });
+  var addAddressOffCanvas = $("#addAddressOffCanvas");
+  addAddressOffCanvas.on("hidden.bs.offcanvas", function () {
+    $("body").removeClass("bg-overlay");
+  });
   // hero section swiper
   var swiperHero = new Swiper(".hero-slider", {
     // Optional parameters
@@ -460,16 +490,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".product-single-info-tab .nav-tabs button").click(function () {
-    var position = $(this).position();
-    var width = $(this).width() + 32;
-    $(".product-single-info-tab .nav-link-slider").css({ left: +position.left, width: width });
-  });
-  var actWidth = $(".product-single-info-tab .nav").find(".active").width() + 32;
-  var actPosition = $(".product-single-info-tab .nav-link-slider").position();
-  $(".product-single-info-tab .nav-link-slider").css({ left: +actPosition.left, width: actWidth });
-
-  // Product single page accordion
+  // Product single page accordion & Faqs page accordion
   $(".set > a").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
@@ -484,4 +505,13 @@ $(document).ready(function () {
       $(this).siblings(".content").slideDown(200);
     }
   });
+
+  $(".product-single-info-tab .nav-tabs button").click(function () {
+    var position = $(this).position();
+    var width = $(this).width() + 32;
+    $(".product-single-info-tab .nav-link-slider").css({ left: +position.left, width: width });
+  });
+  var actWidth = $(".product-single-info-tab .nav").find(".active").width() + 32;
+  var actPosition = $(".product-single-info-tab .nav-link-slider").position();
+  $(".product-single-info-tab .nav-link-slider").css({ left: +actPosition.left, width: actWidth });
 });

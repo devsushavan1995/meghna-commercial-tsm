@@ -8,6 +8,9 @@ $(document).ready(function () {
   //   }
   // });
   let oldValue = 0;
+  let siteHeader = $(".site-header");
+  // let siteHeaderHeight = siteHeader.height();
+  // console.log(siteHeaderHeight);
   $(window).scroll(function (e) {
     //navbar shrink
     // if ($(document).scrollTop() > 50) {
@@ -29,9 +32,9 @@ $(document).ready(function () {
 
       //Subtract the two and conclude
       if (oldValue - newValue < 0) {
-        $(".site-header").addClass("site-header--shrinked");
+        siteHeader.addClass("site-header--shrinked");
       } else if (oldValue - newValue > 0) {
-        $(".site-header").removeClass("site-header--shrinked");
+        siteHeader.removeClass("site-header--shrinked");
       }
 
       // Update the old value
@@ -101,7 +104,7 @@ $(document).ready(function () {
     });
   });
 
-  //Contact Form Validation
+  /* Contact Form Validation
   $("#contactForm").validate({
     rules: {
       c_fullname: {
@@ -150,7 +153,17 @@ $(document).ready(function () {
     },
     "Please enter a valid phone number."
   );
-
+  */
+  //Contact Form material label control
+  var contactFormInputs = $(".contact-form__input");
+  contactFormInputs.each(function () {
+    $(this).on("focus", function () {
+      $(this).prev().addClass("anim-label--shrinked");
+    });
+    $(this).on("blur", function () {
+      if ($(this).val().length === 0) $(this).prev().removeClass("anim-label--shrinked");
+    });
+  });
   // quanity increment and decrement funciton
   $(".qtyplus").each(function () {
     // Get the field name
@@ -245,15 +258,15 @@ $(document).ready(function () {
     // Optional parameters
     direction: "horizontal",
     slidesPerView: 5,
-    spaceBetween: 12,
+    spaceBetween: 10,
     loop: true,
     autoplay: true,
     pauseOnMouseEnter: true,
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 8,
       },
       // when window width is >= 480px
       576: {
@@ -313,8 +326,8 @@ $(document).ready(function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
       // when window width is >= 480px
       576: {
@@ -379,7 +392,6 @@ $(document).ready(function () {
       swiper: swiperThumb,
     },
   });
-
 
   // Products Page sub category dropdown menu
   var catItemExpandBtns = $(".category-filter-list .category-filter__item .item__button--expand");

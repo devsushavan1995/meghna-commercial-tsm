@@ -1,33 +1,4 @@
 $(document).ready(function () {
-  // Faqs section search
-  var faqsSearchFormInput = $("#faqsSearchFormInput");
-  var faqsQuestions = $(".faqs-section .set");
-  faqsSearchFormInput.on("keypress", function () {
-    var inpVal = $(this).val();
-    inpVal = inpVal.toLowerCase();
-    console.log(inpVal);
-    faqsQuestions.each(function () {
-      // console.log($(this).find('span').html())
-      if ($(this).find("span").text().toLowerCase().indexOf(inpVal) > 1) {
-        $(this).show();
-      } else {
-        $(this).hide();
-      }
-    });
-    if (inpVal.length == 0) {
-      faqsQuestions.each(function () {
-        $(this).show();
-      });
-    }
-  });
-  // $("html").click(function (event) {
-  //   if ($(event.target).closest(".categories-collapse ").length !== 0) {
-  //     var categoriesCollapse = $("#collapseCategories");
-  //     var bsCollapse = new bootstrap.Collapse(categoriesCollapse, {
-  //       hide: true
-  //     });
-  //   }
-  // });
   let oldValue = 0;
   let siteHeader = $(".site-header");
   // let siteHeaderHeight = siteHeader.height();
@@ -125,55 +96,30 @@ $(document).ready(function () {
     });
   });
 
-  /* Contact Form Validation
-  $("#contactForm").validate({
-    rules: {
-      c_fullname: {
-        required: true,
-        patternFullname: /^[a-zA-Z\s]*$/,
-      },
-      c_email: {
-        required: true,
-        email: true,
-      },
-      c_phone: {
-        required: true,
-        patternPhone: /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/,
-      },
-    },
-    messages: {
-      c_fullname: {
-        required: "This field is required.",
-      },
-      c_email: {
-        required: "This field is required.",
-        email: "Please enter a valid email address.",
-      },
-      c_phone: {
-        required: "This field is required.",
-      },
-    },
-    submitHandler: function (form, e) {
-      e.preventDefault();
-      form.reset();
-      notificationToastUpdate("success", "Your message has been sent.");
-      // form.submit();
-    },
+  /* Faqs section search
+  var faqsSearchForm = $(".faqs-search-form");
+  var faqsSearchFormInput = $("#faqsSearchFormInput");
+  var faqsQuestions = $(".faqs-section .set");
+
+  faqsSearchForm.on("submit", function (e) {
+    e.preventDefault();
+    var inpVal = faqsSearchFormInput.val();
+    inpVal = inpVal.toLowerCase();
+    if (inpVal.length == 0) {
+      faqsQuestions.each(function () {
+        $(this).show();
+      });
+    } else {
+      faqsQuestions.each(function () {
+        // console.log($(this).find('span').html())
+        if ($(this).find("span").text().toLowerCase().indexOf(inpVal) > 1) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    }
   });
-  $.validator.addMethod(
-    "patternFullname",
-    function (value, element, regexp) {
-      return this.optional(element) || regexp.test(value);
-    },
-    "Number can not be included in Full Name."
-  );
-  $.validator.addMethod(
-    "patternPhone",
-    function (value, element, regexp) {
-      return this.optional(element) || regexp.test(value);
-    },
-    "Please enter a valid phone number."
-  );
   */
   //Contact Form material label control
   var contactFormInputs = $(".contact-form__input");
@@ -420,6 +366,58 @@ $(document).ready(function () {
     },
     thumbs: {
       swiper: swiperThumb,
+    },
+  });
+
+  //testimonial section swiper
+  var swiperTestimonial = new Swiper(".swiper-testimonial", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderCustom: function (swiper, current, total) {
+        var names = [];
+        $(".swiper-wrapper .swiper-slide").each(function (i) {
+          names.push($(this).data("name"));
+        });
+        var text = "<ul>";
+        for (let i = 1; i <= total; i++) {
+          if (current == i) {
+            text += `<li class="swiper-pagination-bullet active">${names[i]}</li>`;
+          } else {
+            text += `<li class="swiper-pagination-bullet">${names[i]}</li>`;
+          }
+        }
+        text += "</ul>";
+        return text;
+      },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 

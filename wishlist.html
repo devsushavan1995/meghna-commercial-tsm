@@ -13,323 +13,335 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <link rel="stylesheet" href="./assets/vendors/price-range-slider/price-range-slider.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Meghna Commercial | Home</title>
+    <title>Meghna Commercial | Wishlist</title>
   </head>
   <body class="wishlist">
-  <!-- Site Header -->
-  <header class="site-header">
-    <!-- Header Top -->
-    <div class="site-header__top py-3 py-lg-3 bg--primary">
-      <div class="container-fluid px-xl-4">
-        <div class="row">
-          <ul class="site-ecommerce-links d-flex justify-content-center justify-content-sm-end">
-            <li>
-              <a href="#" class="mx-2 d-inline-block px-1 text--sm">Order Tracking</a>
-            </li>
-            <li>
-              <a href="#" class="mx-2 d-inline-block px-1 text--sm">Top Offers</a>
-            </li>
-            <li>
-              <a href="./faqs.html" class="mx-2 d-inline-block px-1 text--sm">FAQs</a>
-            </li>
-          </ul>
+    <!-- Site Header -->
+    <header class="site-header">
+      <!-- Header Top -->
+      <div class="site-header__top py-3 py-lg-3 bg--primary">
+        <div class="container-fluid px-xl-4">
+          <div class="row">
+            <ul class="site-ecommerce-links d-flex justify-content-center justify-content-sm-end">
+              <li>
+                <a href="#" class="mx-2 d-inline-block px-1 text--sm">Order Tracking</a>
+              </li>
+              <li>
+                <a href="#" class="mx-2 d-inline-block px-1 text--sm">Top Offers</a>
+              </li>
+              <li>
+                <a href="./faqs.html" class="mx-2 d-inline-block px-1 text--sm">FAQs</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Header Middle -->
-    <div class="site-header__middle bg--light pt-3 pt-lg-0 pb-3">
-      <div class="container-fluid px-xl-4">
-        <div class="row align-items-center justify-content-between">
-          <!-- Logo -->
-          <div class="d-flex align-items-center w-auto">
-            <a class="site-header__button--nav-toggler me-2 me-lg-3 d-xl-none" data-bs-toggle="offcanvas" href="#offcanvasNavigation" role="button" aria-controls="offcanvasNavigation">
-              <i class="fa-solid fa-bars"></i>
-            </a>
-            <a href="./index.html" class="d-inline-block site-header__logo">
-              <img src="./assets/images/logo.png" alt="logo" />
-            </a>
-          </div>
-          <!-- Product Search Form -->
-          <form action="#" class="product-search-form d-none d-xl-inline-block w-auto">
-            <div class="product-search-form__inputs-wrapper border-custom-1 border-radius d-flex align-items-center bg--white">
-              <select class="product-search-form__select-category border-0" name="p_s_sel_cat">
-                <option value="all_categories">All Categories</option>
-                <option value="chocolate_moulds">Chocolate Moulds</option>
-                <option value="chocolate_machines">Chocolate Machines</option>
-                <option value="packageing_boxes">Packaging Boxes</option>
-                <option value="bakery_ingredients">Bakery Ingredients</option>
-              </select>
-              <input type="text" name="p_s_input_text" placeholder="Search for products" required />
-              <button type="submit" class="button button-secondary rounded-0">Search</button>
-            </div>
-          </form>
-          <!-- Site CTA Links -->
-          <div class="site-header__cta-wrapper d-flex align-items-center justify-content-end w-auto">
-            <a href="javascript:void(0)" class="d-inline-block d-lg-none site-header__cta site-header__cta--search me-2"><i class="bi bi-search"></i></a>
-            <div class="site-header__my-account dropdown ms-1">
-              <a class="dropdown-toggle bg-transparent text--secondary border-0 d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="me-2"><i class="fa-regular fa-user"></i></span>
-                <span class="my-account__text d-none d-md-inline-block"><small class="d-block">Sign In</small><span class="fw-bold">Your Account</span></span>
+      <!-- Header Middle -->
+      <div class="site-header__middle bg--light pt-3 pt-lg-0 pb-3">
+        <div class="container-fluid px-xl-4">
+          <div class="row align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="d-flex align-items-center w-auto">
+              <a class="site-header__button--nav-toggler me-2 me-lg-3 d-xl-none" data-bs-toggle="offcanvas" href="#offcanvasNavigation" role="button" aria-controls="offcanvasNavigation">
+                <i class="fa-solid fa-bars"></i>
               </a>
+              <a href="/" class="d-inline-block site-header__logo">
+                <img src="./assets/images/logo.png" alt="logo" />
+              </a>
+            </div>
+            <!-- Product Search Form -->
+            <form action="#" class="product-search-form d-none d-xl-inline-block w-auto">
+              <div class="product-search-form__inputs-wrapper border-custom-1 border-radius d-flex align-items-center bg--white">
+                <select class="product-search-form__select-category border-0" name="p_s_sel_cat">
+                  <option value="all_categories">All Categories</option>
+                  <option value="chocolate_moulds">Chocolate Moulds</option>
+                  <option value="chocolate_machines">Chocolate Machines</option>
+                  <option value="packageing_boxes">Packaging Boxes</option>
+                  <option value="bakery_ingredients">Bakery Ingredients</option>
+                </select>
+                <input type="text" name="p_s_input_text" placeholder="Search for products" required />
+                <button type="submit" class="button button-secondary rounded-0">Search</button>
+              </div>
+            </form>
+            <!-- Site CTA Links -->
+            <div class="site-header__cta-wrapper d-flex align-items-center justify-content-end w-auto">
+              <a href="javascript:void(0)" class="d-inline-block d-lg-none site-header__cta site-header__cta--search me-2"><i class="bi bi-search"></i></a>
+              <div class="site-header__my-account dropdown ms-1">
+                <a class="dropdown-toggle bg-transparent text--secondary border-0 d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="me-2"><i class="fa-regular fa-user"></i></span>
+                  <span class="my-account__text d-none d-md-inline-block"><small class="d-block">Sign In</small><span class="fw-bold">Your Account</span></span>
+                </a>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#"><span class="me-3"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Login</a></li>
-                <li><a class="dropdown-item" href="#"><span class="me-3"><i class="fa-solid fa-user"></i></span>My Account</a></li>
-                <li><a class="dropdown-item" href="#"><span class="me-3"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>Logout</a></li>
-              </ul>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="./login.html"
+                      ><span class="me-3"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Login</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./my-account.html"
+                      ><span class="me-3"><i class="fa-solid fa-user"></i></span>My Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./register.html"
+                      ><span class="me-3"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a href="./wishlist.html" class="site-header__cta site-header__cta--wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span class="item-count wishlist__item-count">2</span>
+              </a>
+              <a href="./cart.html" class="site-header__cta site-header__cta--cart">
+                <span><i class="bi bi-cart"></i></span>
+                <span class="item-count cart__item-count">2</span>
+              </a>
             </div>
-            <a href="./wishlist.html" class="site-header__cta site-header__cta--wishlist">
-              <span><i class="fa-regular fa-heart"></i></span>
-              <span class="item-count wishlist__item-count">2</span>
-            </a>
-            <a href="./cart.html" class="site-header__cta site-header__cta--cart">
-              <span><i class="bi bi-cart"></i></span>
-              <span class="item-count cart__item-count">2</span>
-            </a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Header Bottom -->
-    <div class="site-header__bottom d-none d-xl-block bg--white position-relative">
-      <div class="container-fluid ps-0 pe-4">
-        <div class="row justify-content-between align-items-center">
-          <div class="d-flex w-auto align-items-center">
-            <!-- Categories -->
-            <button class="button button-primary rounded-0 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategories" aria-expanded="false" aria-controls="collapseExample">
-              <i class="fa-solid fa-bars"></i>
-              <span class="text-uppercase ms-2">Shop By Categories</span>
-            </button>
-            <div class="collapse categories-collapse" id="collapseCategories">
-              <ul class="categories-mega-menu">
-                <li class="categories-mega-menu__item">
-                  <a href="#" class="categories-mega-menu__item--link"
-                    ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
-                  ></a>
-                  <div class="categories-mega-menu__content-area">
-                    <div class="row">
-                      <div class="col-lg-8 p-5 d-flex flex-wrap">
-                        <div class="sub-category-wrapper w-50">
-                          <p class="text--heading">Sub Category Combo Title</p>
-                          <ul class="sub-category-menu">
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                          </ul>
+      <!-- Header Bottom -->
+      <div class="site-header__bottom d-none d-xl-block bg--white position-relative">
+        <div class="container-fluid ps-0 pe-4">
+          <div class="row justify-content-between align-items-center">
+            <div class="d-flex w-auto align-items-center">
+              <!-- Categories -->
+              <button class="button button-primary rounded-0 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategories" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-bars"></i>
+                <span class="text-uppercase ms-2">Shop By Categories</span>
+              </button>
+              <div class="collapse categories-collapse" id="collapseCategories">
+                <ul class="categories-mega-menu">
+                  <li class="categories-mega-menu__item">
+                    <a href="#" class="categories-mega-menu__item--link"
+                      ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                    <div class="categories-mega-menu__content-area">
+                      <div class="row">
+                        <div class="col-lg-8 p-5 d-flex flex-wrap">
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="sub-category-wrapper w-50">
-                          <p class="text--heading">Sub Category Combo Title</p>
-                          <ul class="sub-category-menu">
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                          </ul>
-                        </div>
+                        <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
                       </div>
-                      <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
                     </div>
-                  </div>
-                </li>
-                <li class="categories-mega-menu__item">
-                  <a href="#" class="categories-mega-menu__item--link"
-                    ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
-                  ></a>
-                  <div class="categories-mega-menu__content-area">
-                    <div class="row">
-                      <div class="col-lg-8 p-5 d-flex flex-wrap">
-                        <div class="sub-category-wrapper w-50">
-                          <p class="text--heading">Sub Category Combo Title</p>
-                          <ul class="sub-category-menu">
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                          </ul>
+                  </li>
+                  <li class="categories-mega-menu__item">
+                    <a href="#" class="categories-mega-menu__item--link"
+                      ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                    <div class="categories-mega-menu__content-area">
+                      <div class="row">
+                        <div class="col-lg-8 p-5 d-flex flex-wrap">
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="sub-category-wrapper w-50">
-                          <p class="text--heading">Sub Category Combo Title</p>
-                          <ul class="sub-category-menu">
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                          </ul>
-                        </div>
+                        <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
                       </div>
-                      <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
                     </div>
-                  </div>
-                </li>
-                <li class="categories-mega-menu__item">
-                  <a href="#" class="categories-mega-menu__item--link"
-                    ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
-                  ></a>
-                  <div class="categories-mega-menu__content-area">
-                    <div class="row">
-                      <div class="col-lg-8 p-5 d-flex flex-wrap">
-                        <div class="sub-category-wrapper w-50">
-                          <p class="text--heading">Sub Category Combo Title</p>
-                          <ul class="sub-category-menu">
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                          </ul>
+                  </li>
+                  <li class="categories-mega-menu__item">
+                    <a href="#" class="categories-mega-menu__item--link"
+                      ><span class="categories-mega-menu__item-title">Category 1</span><span class="categories-mega-menu__item-icon"><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                    <div class="categories-mega-menu__content-area">
+                      <div class="row">
+                        <div class="col-lg-8 p-5 d-flex flex-wrap">
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="sub-category-wrapper w-50">
+                            <p class="text--heading">Sub Category Combo Title</p>
+                            <ul class="sub-category-menu">
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                              <li>
+                                <a href="#">Sub Category Title 1</a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="sub-category-wrapper w-50">
-                          <p class="text--heading">Sub Category Combo Title</p>
-                          <ul class="sub-category-menu">
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                            <li>
-                              <a href="#">Sub Category Title 1</a>
-                            </li>
-                          </ul>
-                        </div>
+                        <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
                       </div>
-                      <div class="col-lg-4 categories-mega-menu__content-featured-bg" style="background-image: url(./assets/images/banner.png)"></div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Main Navigation Menu -->
+              <nav class="site-header__nav d-none d-lg-inline-block w-auto">
+                <ul class="d-flex justify-content-center align-items-center">
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="./about-us.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="./products.html">Products</a>
+                  </li>
+                  <li>
+                    <a href="./contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <!-- Main Navigation Menu -->
-            <nav class="site-header__nav d-none d-lg-inline-block w-auto">
-              <ul class="d-flex justify-content-center align-items-center">
-                <li>
-                  <a href="./index.html">Home</a>
-                </li>
-                <li>
-                  <a href="./about-us.html">About Us</a>
-                </li>
-                <li>
-                  <a href="./products.html">Products</a>
-                </li>
-                <li>
-                  <a href="./contact-us.html">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- Offer Dropdown -->
-          <div class="dropdown w-auto site-header__offer-container">
-            <a class="d-flex align-items-center" href="#">
-              <span class="me-2"><img src="./assets/images/discount.png" alt="discount icon" width="36" /></span>
-              <span class="site-header__offer-text"><small>Only this weekend</small><br /><span class="fw-bold">Super Discount</span></span>
-            </a>
+            <!-- Offer Dropdown -->
+            <div class="dropdown w-auto site-header__offer-container">
+              <a class="d-flex align-items-center" href="#">
+                <span class="me-2"><img src="./assets/images/discount.png" alt="discount icon" width="36" /></span>
+                <span class="site-header__offer-text"><small>Only this weekend</small><br /><span class="fw-bold">Super Discount</span></span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavigation" aria-labelledby="offcanvasNavigationLabel">
-      <div class="offcanvas-header justify-content-end">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavigation" aria-labelledby="offcanvasNavigationLabel">
+        <div class="offcanvas-header justify-content-end">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav class="site-header__mobile-nav">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="./about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="./products.html">Products</a>
+              </li>
+              <li>
+                <a href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div class="offcanvas-body">
-        <nav class="site-header__mobile-nav">
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li>
-              <a href="./about-us.html">About Us</a>
-            </li>
-            <li>
-              <a href="./products.html">Products</a>
-            </li>
-            <li>
-              <a href="./contact-us.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+    </header>
     <main class="site-content">
       <!-- page title -->
       <section class="page-title-section d-flex justify-content-center align-items-center">
@@ -472,22 +484,17 @@
               <h6 class="text--light mb-2 mb-md-3">My Account</h6>
               <ul class="site-footer-menu">
                 <li class="site-footer-menu__item">
-                  <a href="#" class="site-footer-menu__item--link">Product Support</a>
+                  <a href="./about-us.html" class="site-footer-menu__item--link">About Us</a>
                 </li>
                 <li class="site-footer-menu__item">
-                  <a href="#" class="site-footer-menu__item--link">Checkout</a>
+                  <a href="./products.html" class="site-footer-menu__item--link">Products</a>
                 </li>
                 <li class="site-footer-menu__item">
-                  <a href="#" class="site-footer-menu__item--link">Shopping Cart</a>
+                  <a href="./cart.html" class="site-footer-menu__item--link">Cart</a>
                 </li>
+                <li class="site-footer-menu__item"><a href="./wishlist.html" class="site-footer-menu__item--link">Wishlist</a>c</li>
                 <li class="site-footer-menu__item">
-                  <a href="#" class="site-footer-menu__item--link">Wishlist</a>
-                </li>
-                <li class="site-footer-menu__item">
-                  <a href="#" class="site-footer-menu__item--link">Custom Link</a>
-                </li>
-                <li class="site-footer-menu__item">
-                  <a href="#" class="site-footer-menu__item--link">Redeem Voucher</a>
+                  <a href="./my-account.html" class="site-footer-menu__item--link">My Account</a>
                 </li>
               </ul>
             </div>
@@ -498,10 +505,7 @@
                   <a href="#" class="site-footer-menu__item--link">Help Center</a>
                 </li>
                 <li class="site-footer-menu__item">
-                  <a href="#" class="site-footer-menu__item--link">Contact Us</a>
-                </li>
-                <li class="site-footer-menu__item">
-                  <a href="#" class="footer-menu__item--link">Report Abuse</a>
+                  <a href="./contact-us.html" class="site-footer-menu__item--link">Contact Us</a>
                 </li>
                 <li class="site-footer-menu__item">
                   <a href="#" class="footer-menu__item--link">Submit A Dispute</a>

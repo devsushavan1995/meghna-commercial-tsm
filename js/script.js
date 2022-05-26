@@ -121,9 +121,9 @@ $(document).ready(function () {
     }
   });
   */
-  //Contact Form material label control
-  var contactFormInputs = $(".contact-form__input");
-  contactFormInputs.each(function () {
+  //Form material label control
+  var formInputs = $(".form__input");
+  formInputs.each(function () {
     $(this).on("focus", function () {
       $(this).prev().addClass("anim-label--shrinked");
     });
